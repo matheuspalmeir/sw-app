@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./swapi-gateway
+    container_name: swapi-gateway
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./swapi-gateway:/var/www/html
+    networks:
+      - swapi-network
+
+  frontend:
+    build: ./swapi-frontend
+    container_name: swapi-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./swapi-frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - swapi-network
+
+networks:
+  swapi-network:
+    driver: bridge
