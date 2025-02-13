@@ -8,12 +8,12 @@ GitHub Repositories:
 
 UI: https://github.com/matheuspalmeir/swapi-frontend
 
-Backend: https://github.com/matheuspalmeir/swapi-gateway
+API: https://github.com/matheuspalmeir/swapi-gateway
 
 You can run the entire application with Docker.
 So, before jumping on the application, make sure you have Docker installed on your machine.
 
-After cloning the repository properly, navigate to the project directory and run the following command to start the application:
+After cloning the repositories properly (clone UI and API repo), navigate to this project directory and run the following command to start the application:
 
 ```bash
 docker-compose up -build
