@@ -18,7 +18,7 @@ So, before jumping on the application, make sure you have Docker installed on yo
 Once this repository has submodules, you can clone the repository with the following command:
 
 ```bash
-git clone --recurse-submodules https://github.com/your-username/sw-app.git
+git clone --recurse-submodules https://github.com/matheuspalmeir/sw-app.git
 
 ```
 
