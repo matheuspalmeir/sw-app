@@ -1,3 +1,6 @@
 [submodule "swapi-frontend"]
 	path = swapi-frontend
 	url = https://github.com/matheuspalmeir/swapi-frontend.git
+[submodule "swapi-gateway"]
+	path = swapi-gateway
+	url = https://github.com/matheuspalmeir/swapi-gateway.git
