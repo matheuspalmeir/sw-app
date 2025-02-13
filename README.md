@@ -13,6 +13,15 @@ API: https://github.com/matheuspalmeir/swapi-gateway
 You can run the entire application with Docker.
 So, before jumping on the application, make sure you have Docker installed on your machine.
 
+## Cloning the repositories
+
+Once this repository has submodules, you can clone the repository with the following command:
+
+```bash
+git clone --recurse-submodules https://github.com/your-username/sw-app.git
+
+```
+
 After cloning the repositories properly (clone UI and API repo), navigate to this project directory and run the following command to start the application:
 
 ```bash
@@ -22,3 +31,4 @@ docker-compose up -build
 This will start the application and make it accessible at http://localhost:3000.
 To check the API, you can access it at http://localhost:8000.
 Please, see the readme file in the swapi-gateway folder for more information and also the readme in the swapi-frontend folder.
+git submodule add https://github.com/matheuspalmeir/swapi-gateway.git swapi-gateway
